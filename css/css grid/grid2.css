@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.2;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'header header header'
+        'nav content aside'
+        'nav footer footer';
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
+
+
+}
+
+nav,
+header,
+footer,
+aside,
+main {
+    background: lightskyblue;
+    color: antiquewhite;
+    padding: 20px;
+    border: 1px solid lightseagreen;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+}
+
+footer {
+    grid-area: footer;
+}
